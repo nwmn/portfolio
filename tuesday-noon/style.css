@@ -1,0 +1,330 @@
+/* Import Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Sarpanch|Bubbler+One');
+
+/* Meyers CSS Reset
+  Source: http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Begin Jake Newman's Code */
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+p { letter-spacing: 2px; }
+
+img.small {
+  max-width: 200px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+
+/* Fluid Grid */
+
+
+.col-4 {
+  width: 25%;
+}
+
+.col-8 {
+	width: 66.666%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.column {
+  float: left;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+header #nav {
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  font-size: 15pt;
+}
+
+header #splash {
+  font-family: "Orbitron", sans-serif;
+  font-size: 25pt;
+}
+
+header .smalltext {
+  font-size: 15pt;
+}
+
+#bio {
+  color: white;
+  background-color: rgba(80,85,104, 0.8);
+  display: table;
+}
+
+#bio p {
+  margin: auto;
+  padding: 50px;
+}
+
+#bio p.about {
+  height: 200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+#bio p.para {
+  height: 200px;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Bubbler One";
+  font-size: 15pt;
+  line-height: 150%;
+}
+
+
+#nav {
+  height: 50px;
+  width: 100%;
+  background-color: #2B3044;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+ }
+
+
+#splash {
+  width: 100%;
+  height: 300px;
+  /*background-image: url("images/nasa.jpg");
+  background-size: cover;*/
+  text-align: center;
+  padding-top: 100px;
+
+}
+
+.about, h2 {
+  font-family: "Sarpanch";
+  font-weight: bold;
+  font-size: 25pt;
+  text-transform: uppercase;
+}
+
+h2 {
+	font-size: 30pt;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+main {
+  width: 100%;
+	height: 520px;
+	padding-top: 5px;
+	/*background-image: url("images/nasa.jpg");
+	background-size: cover;*/
+	text-align: center;
+}
+
+.container {
+  width: 75%;
+	margin: auto;
+	height: 410px;
+	padding-top: 5px;
+	background-size: cover;
+}
+
+img {
+
+}
+
+
+main section.col-4 {
+	height: 200px;
+	padding: 30px;
+}
+
+.col-4 {
+	padding-right: 30px;
+}
+
+main section.col-4:hover {
+	position: relative;
+	box-shadow: inset 0 0 100px 200px rgba(255, 255, 255, 0.5);
+}
+
+main section.col-4:active {
+	box-shadow: inset 0 0 100px 200px rgba(0, 0, 0, 0.5);
+	position: relative;
+}
+
+
+footer {
+	background-color: #2B3044;
+	height: 50px;
+	width: 100%;
+}
+
+footer.portfolio {
+	background-color: #2B3044;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+
+/* Backgrounds */
+
+.flag {
+	background-image: url("images/flag.PNG");
+	background-size: cover;
+	background-position: center bottom;
+}
+
+.book {
+	background-image: url("images/googlebook.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.print {
+	background-image: url("images/radioPreview.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.memorial {
+	background-image: url("images/memorial.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.type {
+	background-image: url("images/type.png");
+	background-size: cover;
+	background-position: bottom;
+}
+
+.kj {
+	background-image: url("images/kj.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.flags {
+	background-image: url("images/flags.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.vectors {
+	background-image: url("images/saucePreview.png");
+	background-size: cover;
+	background-position: right;
+}
+
+body {
+	background-image: url("images/nasaBig.jpg");
+	background-size: cover;
+}
+
+.button {
+	width: 70%;
+	padding: 30px;
+	margin: auto;
+	margin-top: 100px;
+	background: rgba(255,255,255, 0.3);
+	border-radius: 30px;
+	border: 2px solid rgba(255,255,255, 0.5);
+}
+
+.button:hover {
+	background: rgba(255,255,255, 0.5);
+	border: 2px solid rgba(255,255,255, 0.7);
+}
+
+.button:active {
+	background: rgba(0,0,0, 0.7);
+	border: 2px solid rgba(0,0,0, 0.7);
+}
+
+
+
+@media screen and (max-width: 1400px) {
+  #bio p.about {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  #bio p.about {
+    font-size: 2.5vw;
+  }
+}

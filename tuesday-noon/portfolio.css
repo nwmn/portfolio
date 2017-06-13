@@ -1,0 +1,36 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+html {
+  background-image: url("images/compressed.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 125px;
+  margin-bottom: 250px;
+}
+
+section .col-4 {
+  width: calc(25% - 20px);
+  margin: 10px;
+}
+
+.button {
+  width: 30%;
+  margin-top: 100px;
+  padding: 25px; 
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  margin: auto;
+  margin-bottom: 100px;
+}
